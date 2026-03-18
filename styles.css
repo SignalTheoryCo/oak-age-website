@@ -376,13 +376,37 @@ h3 {
 .future-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 18px;
-  margin-top: 32px;
+  gap: 24px;
+  margin-top: 40px;
 }
 
 .future-card {
-  border-radius: 22px;
-  padding: 24px;
+  padding: 28px 22px;
+  border-radius: 14px;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.08);
+  transition: all 0.25s ease;
+}
+
+.future-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(255,255,255,0.18);
+}
+
+.future-card h3 {
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+.future-card p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: rgba(255,255,255,0.7);
+}
+
+.section-future .section-heading {
+  max-width: 520px;
+  margin-bottom: 30px;
 }
 
 .follow-wrap {
@@ -488,4 +512,26 @@ h3 {
   height: 2px;
   margin: 18px auto 24px;
   background: linear-gradient(90deg, transparent, #b98a42, transparent);
+}
+
+.btn {
+  padding: 12px 22px;
+  border-radius: 999px;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+
+.btn-gold {
+  background: linear-gradient(135deg, #c9a84c, #e5c97a);
+  color: #111;
+}
+
+.btn-ghost {
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+@media (max-width: 900px) {
+  .future-grid {
+    grid-template-columns: 1fr;
+  }
 }
