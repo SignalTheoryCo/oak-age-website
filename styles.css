@@ -682,3 +682,20 @@ h3 {
     width: 185px;
   }
 }
+
+  .section {
+  padding: 80px 20px;
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 60px 18px;
+  }
+}
+
+  .release-image img {
+  border-radius: 14px;
+  box-shadow: 0 30px 80px rgba(0,0,0,0.7);
+}
+
+  
