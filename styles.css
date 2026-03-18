@@ -671,3 +671,14 @@ h3 {
     max-width: 280px;
   }
 }
+
+  .btn-ghost {
+  border: 1px solid rgba(255,255,255,0.15);
+  color: rgba(255,255,255,0.7);
+}
+
+  @media (max-width: 640px) {
+  .hero-logo {
+    width: 185px;
+  }
+}
