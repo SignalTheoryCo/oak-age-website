@@ -534,4 +534,140 @@ h3 {
   .future-grid {
     grid-template-columns: 1fr;
   }
+
+  /* ===== HERO UPGRADE ===== */
+
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.18), rgba(0, 0, 0, 0.38)),
+    url("header.jpg");
+  background-size: cover;
+  background-position: center center;
+  transform: scale(1.04);
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(to bottom, rgba(8, 6, 5, 0.48), rgba(8, 6, 5, 0.70) 45%, rgba(8, 6, 5, 0.92)),
+    radial-gradient(circle at center, rgba(185, 138, 66, 0.10), transparent 36%);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 140px 24px 96px;
+  text-align: center;
+}
+
+.hero-logo {
+  width: 240px;
+  max-width: 54vw;
+  margin: 0 auto 26px;
+  display: block;
+  filter: drop-shadow(0 18px 36px rgba(0, 0, 0, 0.42));
+}
+
+.hero .eyebrow {
+  margin-bottom: 18px;
+  color: #d0a45d;
+  letter-spacing: 0.22em;
+  font-size: 0.78rem;
+}
+
+.hero h1 {
+  max-width: 980px;
+  margin: 0 auto;
+  font-size: clamp(3.4rem, 8vw, 6.6rem);
+  line-height: 0.94;
+  letter-spacing: -0.035em;
+  color: #f5efe7;
+  text-shadow: 0 12px 40px rgba(0, 0, 0, 0.42);
+}
+
+.hero-line {
+  width: 92px;
+  height: 2px;
+  margin: 22px auto 26px;
+  background: linear-gradient(90deg, transparent, #b98a42, transparent);
+}
+
+.hero-copy {
+  max-width: 720px;
+  margin: 0 auto 34px;
+  font-size: 1.08rem;
+  line-height: 1.7;
+  color: rgba(244, 239, 231, 0.82);
+}
+
+.hero-actions {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.hero .btn {
+  min-width: 190px;
+}
+
+@media (max-width: 900px) {
+  .hero-content {
+    padding: 122px 20px 80px;
+  }
+
+  .hero-logo {
+    width: 210px;
+    max-width: 62vw;
+    margin-bottom: 22px;
+  }
+
+  .hero-copy {
+    font-size: 1rem;
+    max-width: 92%;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero {
+    min-height: 88vh;
+  }
+
+  .hero-logo {
+    width: 200px;
+    max-width: 68vw;
+  }
+
+  .hero h1 {
+    font-size: clamp(2.7rem, 11vw, 4.2rem);
+    line-height: 0.96;
+  }
+
+  .hero-copy {
+    font-size: 0.98rem;
+    line-height: 1.6;
+  }
+
+  .hero-actions {
+    gap: 12px;
+  }
+
+  .hero .btn {
+    width: 100%;
+    max-width: 280px;
+  }
 }
