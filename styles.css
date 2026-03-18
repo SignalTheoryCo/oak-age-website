@@ -701,3 +701,39 @@ h3 {
   footer {
   opacity: 0.85;
 }
+
+  .section-notify {
+  text-align: center;
+}
+
+.notify-block {
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+.notify-copy {
+  margin: 16px 0 26px;
+  color: rgba(255,255,255,0.75);
+}
+
+.notify-form {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.notify-form input {
+  padding: 12px 14px;
+  border-radius: 8px;
+  border: 1px solid rgba(255,255,255,0.2);
+  background: rgba(255,255,255,0.05);
+  color: white;
+  min-width: 220px;
+}
+
+.notify-note {
+  margin-top: 12px;
+  font-size: 13px;
+  color: rgba(255,255,255,0.4);
+}
