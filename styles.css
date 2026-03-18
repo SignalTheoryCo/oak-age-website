@@ -737,3 +737,9 @@ h3 {
   font-size: 13px;
   color: rgba(255,255,255,0.4);
 }
+
+  .notify-form input:disabled,
+.notify-form button:disabled {
+  opacity: 0.72;
+  cursor: not-allowed;
+}
