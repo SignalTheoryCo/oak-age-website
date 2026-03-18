@@ -743,3 +743,40 @@ h3 {
   opacity: 0.72;
   cursor: not-allowed;
 }
+
+  .notify-form {
+  margin-top: 20px;
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.notify-form input {
+  padding: 12px 16px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,0.15);
+  background: rgba(255,255,255,0.04);
+  color: #f5efe7;
+  min-width: 240px;
+  outline: none;
+}
+
+.notify-form input::placeholder {
+  color: rgba(255,255,255,0.4);
+}
+
+.notify-form button {
+  border-radius: 999px;
+  padding: 12px 22px;
+}
+
+  .notify-copy {
+  margin: 16px 0 24px;
+}
+
+.notify-note {
+  margin-top: 18px;
+  font-size: 13px;
+  color: rgba(255,255,255,0.45);
+}
