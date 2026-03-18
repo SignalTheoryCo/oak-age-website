@@ -330,23 +330,20 @@
         leave your email and we will let you know before it is gone.
       </p>
 
-      <form name="notify" method="POST" data-netlify="true" class="notify-form">
-        <input type="hidden" name="form-name" value="notify" />
+      <div class="notify-form">
+  <input
+    type="email"
+    placeholder="Your email"
+    disabled
+  />
 
-        <input
-          type="email"
-          name="email"
-          placeholder="Your email"
-          required
-        />
-
-        <button type="submit" class="btn btn-gold">
-          Notify Me
-        </button>
-      </form>
+  <button type="button" class="btn btn-gold" disabled>
+    Notify Me
+  </button>
+</div>
 
       <p class="notify-note">
-        No noise. Just release updates.
+  Release list opening soon.
       </p>
     </div>
 
