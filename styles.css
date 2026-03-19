@@ -890,3 +890,38 @@ h3 {
     font-size: 1.6rem;
   }
 }
+
+  @media (min-width: 901px) {
+  .release-image {
+    min-height: 520px;
+    padding: 40px 24px;
+  }
+
+  .release-object {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .release-badge {
+    width: 260px;
+    max-width: 70%;
+    margin: 0 auto 10px;
+  }
+
+  .release-object-label {
+    margin: 0;
+    font-size: 0.82rem;
+    letter-spacing: 0.18em;
+    text-align: center;
+  }
+
+  .release-object-subtitle {
+    margin: 0;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+}
