@@ -799,95 +799,131 @@ h3 {
   }
 }
 
-  /* ===== FINAL RELEASE LAYOUT OVERRIDE ===== */
+ /* ===== RELEASE SECTION: CLEAN DESKTOP + MOBILE SYSTEM ===== */
 
 @media (min-width: 901px) {
   .release-panel {
-    display: grid !important;
-    grid-template-columns: 1fr 1.1fr !important;
-    gap: 0 !important;
-    align-items: stretch !important;
-    overflow: hidden !important;
-    border-radius: 24px !important;
+    display: grid;
+    grid-template-columns: 1fr 1.1fr;
+    gap: 0;
+    align-items: stretch;
+    overflow: hidden;
+    border-radius: 24px;
   }
-  
-  .release-copy {
-    display: flex !important;
-    flex-direction: column !important;
-    justify-content: center !important;
-    padding: 36px !important;
-  }
-}
 
   .release-image {
-  background: #120d0b;
-  border-right: 1px solid rgba(255,255,255,0.06);
-}
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 520px;
+    padding: 32px 24px;
+    background:
+      radial-gradient(circle at center, rgba(185,138,66,0.08), transparent 40%),
+      #120d0b;
+    border-right: 1px solid rgba(255,255,255,0.06);
+  }
 
-.release-object {
-  min-height: 520px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 16px;
-  padding: 32px 24px;
-  text-align: center;
-  position: static;
-}
-
-.release-badge {
-  display: block;
-  width: 240px;
-  max-width: 70%;
-  height: auto;
-  margin: 0 auto;
-  filter: drop-shadow(0 18px 36px rgba(0,0,0,0.42));
-}
-
-.release-object-label {
-  margin: 0;
-  font-size: 0.82rem;
-  letter-spacing: 0.18em;
-  color: #d0a45d;
-}
-
-.release-object-subtitle {
-  margin: 0;
-  font-family: "Cormorant Garamond", serif;
-  font-size: 1.5rem;
-  line-height: 1.05;
-  color: #f5efe7;
-}
-
-@media (max-width: 900px) {
   .release-object {
-    min-height: 380px;
-    padding: 28px 18px;
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    padding: 0;
+    text-align: center;
+    position: static;
   }
 
   .release-badge {
-    width: 210px;
-    max-width: 72%;
+    display: block;
+    width: 240px;
+    max-width: 68%;
+    height: auto;
+    margin: 0 auto;
+    filter: drop-shadow(0 18px 36px rgba(0,0,0,0.42));
+  }
+
+  .release-object-label {
+    margin: 0;
+    font-size: 0.82rem;
+    letter-spacing: 0.18em;
+    color: #d0a45d;
+    text-align: center;
   }
 
   .release-object-subtitle {
-    font-size: 1.3rem;
+    margin: 0;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1.5rem;
+    line-height: 1.05;
+    color: #f5efe7;
+    text-align: center;
+  }
+
+  .release-copy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 36px;
   }
 }
 
-  .release-badge {
-  width: 120px !important;
-}
-.release-object {
-  background: rgba(255, 0, 0, 0.12) !important;
-}
+@media (max-width: 900px) {
+  .release-panel {
+    grid-template-columns: 1fr;
+  }
 
-  body {
-  outline: 6px solid lime !important;
-}
-@media (min-width: 901px) {
-  body {
-    outline: 6px solid red !important;
+  .release-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 380px;
+    padding: 28px 18px;
+    background:
+      radial-gradient(circle at center, rgba(185,138,66,0.08), transparent 40%),
+      #120d0b;
+  }
+
+  .release-object {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    text-align: center;
+    position: static;
+  }
+
+  .release-badge {
+    display: block;
+    width: 210px;
+    max-width: 72%;
+    height: auto;
+    margin: 0 auto;
+    filter: drop-shadow(0 18px 36px rgba(0,0,0,0.42));
+  }
+
+  .release-object-label {
+    margin: 0;
+    font-size: 0.78rem;
+    letter-spacing: 0.16em;
+    color: #d0a45d;
+    text-align: center;
+  }
+
+  .release-object-subtitle {
+    margin: 0;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1.3rem;
+    line-height: 1.05;
+    color: #f5efe7;
+    text-align: center;
+  }
+
+  .release-copy {
+    padding: 28px 22px;
   }
 }
