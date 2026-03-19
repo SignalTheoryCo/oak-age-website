@@ -813,3 +813,21 @@ h3 {
     grid-template-columns: 1fr;
   }
 }
+
+  .release-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 520px;
+  background: radial-gradient(circle at center, rgba(185,138,66,0.08), transparent 45%), #120d0b;
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.release-image img {
+  width: 72%;
+  max-width: 420px;
+  height: auto;
+  object-fit: contain;
+  box-shadow: 0 28px 70px rgba(0,0,0,0.45);
+}
