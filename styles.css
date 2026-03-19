@@ -799,78 +799,6 @@ h3 {
   }
 }
 
-
-  /* ===== RELEASE OBJECT DESKTOP FIX ===== */
-
-.release-image {
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  min-height: 520px !important;
-  padding: 40px 24px !important;
-  background:
-    radial-gradient(circle at center, rgba(185,138,66,0.10), transparent 38%),
-    linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)),
-    #120d0b !important;
-  border-radius: 22px !important;
-  overflow: hidden !important;
-  border: 1px solid rgba(255,255,255,0.06) !important;
-  box-shadow: 0 26px 70px rgba(0,0,0,0.35) !important;
-}
-
-.release-object {
-  width: 100% !important;
-  display: flex !important;
-  flex-direction: column !important;
-  align-items: center !important;
-  justify-content: center !important;
-  text-align: center !important;
-  gap: 10px !important;
-}
-
-.release-image img.release-badge {
-  display: block !important;
-  width: 260px !important;
-  max-width: 70% !important;
-  height: auto !important;
-  object-fit: contain !important;
-  margin: 0 auto 14px !important;
-  box-shadow: 0 18px 36px rgba(0,0,0,0.42) !important;
-}
-
-.release-object-label {
-  margin: 0 !important;
-  font-size: 0.82rem !important;
-  letter-spacing: 0.18em !important;
-  text-align: center !important;
-  color: #d0a45d !important;
-}
-
-.release-object-subtitle {
-  margin: 0 !important;
-  font-family: "Cormorant Garamond", serif !important;
-  font-size: 1.5rem !important;
-  line-height: 1 !important;
-  text-align: center !important;
-  color: #f5efe7 !important;
-}
-
-@media (max-width: 768px) {
-  .release-image {
-    min-height: 420px !important;
-    padding: 28px 18px !important;
-  }
-
-  .release-image img.release-badge {
-    width: 220px !important;
-    max-width: 74% !important;
-  }
-
-  .release-object-subtitle {
-    font-size: 1.3rem !important;
-  }
-}
-
   /* ===== FINAL RELEASE LAYOUT OVERRIDE ===== */
 
 @media (min-width: 901px) {
@@ -882,53 +810,7 @@ h3 {
     overflow: hidden !important;
     border-radius: 24px !important;
   }
-
-  .release-image {
-    min-height: 560px !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    padding: 36px 24px !important;
-    background:
-      radial-gradient(circle at center, rgba(185,138,66,0.08), transparent 40%),
-      #120d0b !important;
-  }
-
-  .release-object {
-    width: 100% !important;
-    min-height: 100% !important;
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    justify-content: center !important;
-    text-align: center !important;
-    gap: 12px !important;
-  }
-
-  .release-image img.release-badge {
-    width: 240px !important;
-    max-width: 68% !important;
-    height: auto !important;
-    object-fit: contain !important;
-    margin: 0 auto !important;
-    display: block !important;
-  }
-
-  .release-object-label {
-    margin-top: 8px !important;
-    margin-bottom: 0 !important;
-    font-size: 0.82rem !important;
-    letter-spacing: 0.18em !important;
-    color: #d0a45d !important;
-  }
-
-  .release-object-subtitle {
-    margin: 0 !important;
-    font-size: 1.45rem !important;
-    line-height: 1.05 !important;
-    color: #f5efe7 !important;
-  }
-
+  
   .release-copy {
     display: flex !important;
     flex-direction: column !important;
@@ -937,55 +819,21 @@ h3 {
   }
 }
 
-  /* ===== FINAL CENTERING FIX ===== */
-
-.release-image {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.release-object {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 12px;
-  width: 100%;
-  text-align: center;
-}
-
-.release-image img.release-badge {
-  margin: 0 auto;
-}
-
-.release-object-label {
-  margin-top: 8px;
-}
-
-.release-object-subtitle {
-  margin-top: 2px;
-}
-
-  @media (min-width: 901px) {
-  .release-object {
-    transform: translateY(-10px);
-  }
-}
-
-  /* ===== CLEAN RELEASE OBJECT SYSTEM ===== */
-
-.release-image {
+  .release-image {
   background: #120d0b;
   border-right: 1px solid rgba(255,255,255,0.06);
 }
 
 .release-object {
   min-height: 520px;
-  display: grid;
-  place-items: center;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
   padding: 32px 24px;
+  text-align: center;
+  position: static;
 }
 
 .release-badge {
@@ -993,12 +841,12 @@ h3 {
   width: 240px;
   max-width: 70%;
   height: auto;
-  margin: 0 auto 18px;
+  margin: 0 auto;
   filter: drop-shadow(0 18px 36px rgba(0,0,0,0.42));
 }
 
 .release-object-label {
-  margin: 0 0 8px;
+  margin: 0;
   font-size: 0.82rem;
   letter-spacing: 0.18em;
   color: #d0a45d;
@@ -1021,7 +869,6 @@ h3 {
   .release-badge {
     width: 210px;
     max-width: 72%;
-    margin-bottom: 16px;
   }
 
   .release-object-subtitle {
