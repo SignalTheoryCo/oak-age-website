@@ -875,3 +875,10 @@ h3 {
     font-size: 1.3rem;
   }
 }
+
+  .release-badge {
+  width: 120px !important;
+}
+.release-object {
+  background: rgba(255, 0, 0, 0.12) !important;
+}
