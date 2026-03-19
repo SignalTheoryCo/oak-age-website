@@ -1056,3 +1056,33 @@ h3 {
     padding: 36px !important;
   }
 }
+
+  /* ===== FINAL CENTERING FIX ===== */
+
+.release-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.release-object {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  width: 100%;
+  text-align: center;
+}
+
+.release-image img.release-badge {
+  margin: 0 auto;
+}
+
+.release-object-label {
+  margin-top: 8px;
+}
+
+.release-object-subtitle {
+  margin-top: 2px;
+}
