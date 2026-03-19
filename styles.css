@@ -882,3 +882,12 @@ h3 {
 .release-object {
   background: rgba(255, 0, 0, 0.12) !important;
 }
+
+  body {
+  outline: 6px solid lime !important;
+}
+@media (min-width: 901px) {
+  body {
+    outline: 6px solid red !important;
+  }
+}
