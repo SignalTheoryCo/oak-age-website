@@ -983,3 +983,11 @@ h3 {
     line-height: 0.95;
   }
 }
+
+  @media (max-width: 640px) {
+  .hero-logo {
+    width: 280px;
+    max-width: 82vw;
+    margin: 0 auto 26px;
+  }
+}
