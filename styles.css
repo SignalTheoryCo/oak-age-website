@@ -991,3 +991,11 @@ h3 {
     margin: 0 auto 26px;
   }
 }
+
+  @media (min-width: 901px) {
+  .hero-logo {
+    width: 180px !important;
+    max-width: none !important;
+    margin: 0 auto 18px !important;
+  }
+}
