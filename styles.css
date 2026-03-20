@@ -1014,3 +1014,9 @@ h3 {
     margin: 0 auto 28px !important;
   }
 }
+
+  @media (min-width: 901px) {
+  .hero-logo {
+    display: none !important;
+  }
+}
