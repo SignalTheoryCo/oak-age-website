@@ -927,3 +927,33 @@ h3 {
     padding: 28px 22px;
   }
 }
+
+  .release-mark {
+  margin: 22px 0 28px;
+  padding: 18px 20px;
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 14px;
+  background: rgba(255,255,255,0.03);
+}
+
+.release-mark-label {
+  margin: 0 0 8px;
+  font-size: 0.72rem;
+  letter-spacing: 0.18em;
+  color: #d0a45d;
+  text-transform: uppercase;
+}
+
+.release-mark-title {
+  margin: 0;
+  font-size: 1rem;
+  letter-spacing: 0.14em;
+  color: #f5efe7;
+}
+
+.release-mark-subtitle {
+  margin: 6px 0 0;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.35rem;
+  color: #f5efe7;
+}
