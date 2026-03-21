@@ -1010,13 +1010,19 @@ h3 {
   }
 
   .hero-logo {
-    width: 180px !important;
-    margin: 0 auto 28px !important;
+  width: 180px;
+  height: auto;
+}
+
+@media (max-width: 640px) {
+  .hero-logo {
+    width: 280px;
+    max-width: 80vw;
   }
 }
 
-  @media (min-width: 901px) {
+@media (min-width: 901px) {
   .hero-logo {
-    display: none !important;
+    display: none;
   }
 }
